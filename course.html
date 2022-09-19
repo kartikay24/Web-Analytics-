@@ -63,6 +63,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 ]
             });
         });
+	    dataLayer.push({ecommerce:null});
+	    dataLayer.push({
+		    event:'view_item_list',
+		    'ecommerce':
+			    {
+				    items: [
+    				{
+					i_id: "S_12345",
+    					i_name: "item1"
+				},
+					    
+    				{
+					i_id: "S_12346",
+    					i_name: "item2"
+				}]}})
     </script>
 
     <title>Contact Page</title>
